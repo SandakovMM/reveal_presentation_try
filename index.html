@@ -12,12 +12,122 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<link rel="stylesheet" href="css/timeline.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/timeline.js"></script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background="#dddddd">
+					<h2>How to make a presentation available from anywhere in 5 minute</h2>
+					<p class="fragment">by example</p>
+				</section>
+				<section data-background="#dddddd">
+					<h2>What's the problem?</h2>
+				</section>
+				<section data-background="#dddddd">
+					<h4>What's the problem?</h4>
+					<div class="cd-horizontal-timeline">
+						<div class="timeline">
+							<div class="events-wrapper">
+								<div class="events">
+									<a data-date="16/01/2014" class="selected">Ancient times</a>
+									<a data-date="28/02/2014">Middleage</a>
+									<a data-date="20/04/2014">XX century</a>
+									<a data-date="29/09/2014">Computer age</a>
+									<a data-date="29/12/2014">Feature</a>
+									<span class="filling-line" aria-hidden="true"></span>
+								</div>
+							</div>
+							<div class="cd-timeline-navigation">
+								<a class="prev inactive">Prev</a>
+								<a class="next">Next</a>
+							</div> 
+						</div>
+						<div class="events-content">
+							<ul>
+								<li class="selected" data-date="16/01/2014">
+									<em>Ancient times</em>
+									<p>Pages</p>
+								</li>
+								<li data-date="28/02/2014">
+									<em>Middleage</em>
+									<p>USB flash drives</p>
+								</li>
+								<li data-date="20/04/2014">
+									<em>XX century</em>
+									<p>Sync files with dropbox</p>
+								</li>
+								<li data-date="29/09/2014">
+									<em>Computer age</em>
+									<p>Open your presentation with link</p>
+								</li>
+								<li data-date="29/09/2014">
+									<em>Feature</em>
+									<p>Share like you want to</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section data-background="#dddddd">
+					<h2>And now we in feature</h2>
+					<h3>What we need to</h3>
+					<ul>
+						<li>reveal.js as presentation engine</li>
+						<li>github pages</li>
+					</ul>
+				</section>
+				<section data-background="#dddddd">
+					<a href="https://revealjs.com">
+						<img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<h3>The HTML Presentation Framework</h3>
+					<p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
+					</p>
+				</section>
+				<section data-background="#dddddd">
+					<h2>reveal.js pros and cons</h2>
+					<h3>Cons</h3>
+					<ul>
+						<li class="fragment">Based on html/css/js, so you better know them</li>
+						<li class="fragment">And sometimes you better know how the engine works inside</li>
+					</ul>
+					<h3>Pros</h3>
+					<ul>
+						<li class="fragment">Actually you may use a slide builder in simple cases</li>
+						<li class="fragment">Presentation as a code</li>
+						<li class="fragment">Your slide is actually a web page</li>
+						<li class="fragment">Your presentation is actually a website</li>
+					</ul>
+				</section>
+				<section data-background-iframe="https://pages.github.com/#tutorial" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>github pages</h2>
+						<p>One of known ways to host simple site in the internet</p>
+					</div>
+				</section>
+				<section data-background="#dddddd">
+					<h2>What you should do</h2>
+
+				</section>
+				<section data-background="https://media.giphy.com/media/ALCI3eTii7qOk/giphy.gif">
+					<h2>Question time</h2>
+				</section>
+				<section data-background="#dddddd">
+					<h2>English time</h2>
+					<h3>Detected results</h3>
+					<ul>
+
+					</ul>
+					<h3>Most usable new words</h3>
+					<ul>
+						
+					</ul>
+				</section>
 			</div>
 		</div>
 
@@ -31,10 +141,15 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				// center: false,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
-		</script>
+		</script> 
 	</body>
 </html>
+
+
+<!-- <img class="r-frame" style="background: rgba(#dddddd);" data-src="./img/timeline_second.jpg" alt="Timeline"> -->
+
+<!-- .cd-timeline-navigation -->
