@@ -113,6 +113,14 @@
 						<div class="snowflake">🐎</div>
 					</div>
 				</section>
+				<section data-background="https://c.tenor.com/PVhZJiIDE_AAAAAC/fv-goku.gif">
+					<h2>This isn't even my final form</h2>
+					<form onclick="mtoast('I am so sorry! There are already over 9000 questions')">
+						<input type="text" id="question" name="question" placeholder="Any questions?">
+						<input type="submit" value="Ask">
+					</form>
+					<div id="mtoast" onclick="this.style.display='none'"></div>
+				</section>
 				<section data-background-iframe="https://pages.github.com/#tutorial" data-background-interactive>
 					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 						<h2>github pages</h2>
@@ -160,6 +168,15 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+
+			function mtoast (msg) {
+				var toast = document.getElementById("mtoast");
+				toast.innerHTML = msg;
+				toast.classList.add("show");
+				setTimeout(function() {
+					toast.innerHTML = "";
+				}, 2000);
+			}
 		</script> 
 	</body>
 </html>
